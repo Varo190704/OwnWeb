@@ -5,7 +5,7 @@ Un hub sencillo con mis enlaces, proyectos y experimentos.
 
 ---
 
-## ✨ Características
+## Características
 - Diseño minimalista (modo oscuro por defecto)  
 - Enlaces a mis redes sociales y proyectos  
 - Integración futura con mi NAS (galería + nube personal)  
@@ -13,19 +13,19 @@ Un hub sencillo con mis enlaces, proyectos y experimentos.
 
 ---
 
-## 🌍 Sitio en vivo
+## Sitio en vivo
 [Visitar aquí]()  
 
 ---
 
-## 📸 Vista previa
+## Vista previa
 *(captura pendiente una vez que el diseño esté online)*  
 
 ---
 
-## 🧑 Sobre mí
+## Sobre mí
 
-Hola, soy Álvaro 👋  
+Hola, soy Álvaro  
 Tengo 21 años y actualmente trabajo como Data Analyst en Sportradar, validando datos en tiempo real y colaborando con equipos internacionales.  
 
 Estudié dos años de la Licenciatura en Sistemas en ORT y recientemente comencé Ingeniería en Computación en la UDELAR, buscando un camino más alineado con mis objetivos profesionales a largo plazo en tecnología.  
@@ -38,10 +38,10 @@ Además, actualmente estoy trabajando en un proyecto personal a largo plazo: con
 
 ---
 
-## 📜 Licencia
+## Licencia
 Este proyecto está bajo la [Licencia MIT](LICENSE).  
 
 ---
 
-## 🌐 Disponible en otros idiomas:  
-- [English](README.md)
+## Disponible en otros idiomas:  
+- [English](/README.md)

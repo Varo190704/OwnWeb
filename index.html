@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal hub — Álvaro</title>
+  <meta name="description" content="Central hub of Álvaro: dev, Lyra, Bako, Ova and blog." />
+  <meta property="og:title" content="Personal hub — Álvaro" />
+  <meta property="og:description" content="Hub: / (home), /dev, /lyra, /bako, /ova, /blog — minimal dark/light design." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0b0f" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <script src="back.js" defer></script>
+</head>
+
+<body class="site-body">
+  <!-- Background FX (JS will draw) -->
+  <canvas id="bgfx" class="bgfx" aria-hidden="true"></canvas>
+
+  <main class="container">
+    <!-- Header -->
+    <header id="site-header" class="site-header">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">A</div>
+        <div class="brand__text">
+          <h1 class="brand__title">ovacode<span class="accent">.dev</span> <span class="brand__subtitle mono">— Álvaro</span></h1>
+          <p id="tagline" class="brand__tagline">Backend-in-progress · Artist (Bako) · Building Lyra · Surfer(Bako)</p>
+        </div>
+      </div>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <!-- SPA routes -->
+        <a class="navlink" data-route="/">Home</a>
+        <a class="navlink" data-route="/dev">Dev</a>
+        <a class="navlink" data-route="/lyra">Lyra</a>
+        <a class="navlink" data-route="/bako">Bako</a>
+        <a class="navlink" data-route="/ova">Ova</a>
+        <a class="navlink" data-route="/blog">Blog</a>
+        <span class="nav-sep" aria-hidden="true"></span>
+        <button id="langToggle" class="btn btn--ghost" aria-label="Switch language">EN</button>
+        <button id="themeToggle" class="btn btn--ghost" aria-label="Toggle theme">☾</button>
+      </nav>
+    </header>
+
+    <!-- Router -->
+    <section id="view" class="view" aria-live="polite"></section>
+
+    <!-- Footer -->
+    <footer id="site-footer" class="site-footer">
+      © <span id="year"></span> Álvaro — GitHub Pages • Ready for NAS • <span class="mono">[#routes, T=theme, L=lang]</span>
+    </footer>
+  </main>
+</body>
+</html>
