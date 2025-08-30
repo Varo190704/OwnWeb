@@ -1,5 +1,3 @@
-const { startTransition } = require("react");
-
 const $ = (sel, p = document) => p.querySelector(sel);
 const $$ = (sel, p = document) => [...p.querySelectorAll(sel)];
 const el = (tag, props = {}) => Object.assign(document.createElement(tag), props);
@@ -7,8 +5,8 @@ const canvas = $("#bgfx");
 const outlet = $("#view");
 const YEAR = $("#year");
 const theme = $("#themeToggle");
-const lang = $("#langToggle");
-const tag = $("#tagline");
+const btnLang = $("#langToggle");
+const tagline = $("#tagline");
 
 /* ---------- i18n ---------- */
 const I18N = {
@@ -125,13 +123,12 @@ function setLang(newlang) {
   localStorage.setItem("lang", newlang);
   const t = I18N[newlang];
 
-  tag.textContent = t.tag;
+  tagline.textContent = t.tag;
   $$(".navlink").forEach(a => {
     const path = a.dataset.route || "/";
     a.textContent = t.nav[path] || t.nav["/"];
   });
-
-  lang.textContent = newlang.toUpperCase();
+  if (BTN_LANG) BTN_LANG.textContent = newLang.toUpperCase();
   render();
 }
 
@@ -424,7 +421,7 @@ document.addEventListener("click", (e) => {
 });
 
 theme.addEventListener("click", () => setTheme(state.theme === "dark" ? "light" : "dark"));
-lang.addEventListener("click", () => setLang(state.lang === "en" ? "es" : "en"));
+if (BTN_LANG) BTN_LANG.addEventListener("click", () => setLang(state.lang === "en" ? "es" : "en"));
 
 document.addEventListener("keydown", (e) => {
   const k = e.key.toLowerCase();
