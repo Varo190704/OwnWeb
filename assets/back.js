@@ -438,10 +438,10 @@ document.addEventListener("keydown", (e) => {
 
 /* ---------- Init ---------- */
 (function init() {
-  YEAR.textContent = new Date().getFullYear();
+  if (YEAR) YEAR.textContent = new Date().getFullYear();
   setTheme(state.theme);
   setLang(state.lang);
-  state.route = location.hash.replace("#", "") || "/";
+  state.route = "/";
   render();
   highlightNav();
 
