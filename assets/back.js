@@ -404,7 +404,7 @@ function renderProjectLists(cur, arc) {
 function render() {
   outlet.innerHTML = "";
   let node;
-  if (state.route === "/" || state.route === "/#") node = viewHome();
+  if (state.route === "/") node = viewHome();
   else if (state.route === "/dev") node = viewDev();
   else if (state.route === "/lyra") node = viewLyra();
   else if (state.route === "/bako") node = viewBako();
