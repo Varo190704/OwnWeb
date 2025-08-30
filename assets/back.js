@@ -421,7 +421,7 @@ document.addEventListener("click", (e) => {
 });
 
 theme.addEventListener("click", () => setTheme(state.theme === "dark" ? "light" : "dark"));
-if (BTN_LANG) BTN_LANG.addEventListener("click", () => setLang(state.lang === "en" ? "es" : "en"));
+if (btnLang) btnLang.addEventListener("click", () => setLang(state.lang === "en" ? "es" : "en"));
 
 document.addEventListener("keydown", (e) => {
   const k = e.key.toLowerCase();
