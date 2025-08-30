@@ -8,7 +8,7 @@ const outlet = $("#view");
 const YEAR = $("#year");
 const theme = $("#themeToggle");
 const lang = $("#langToggle");
-const tag = $("#tag");
+const tag = $("#tagline");
 
 /* ---------- i18n ---------- */
 const I18N = {
@@ -120,10 +120,10 @@ function setTheme(next) {
 }
 
 /* ---------- Language ---------- */
-function setLang(lang) {
-  state.lang = lang;
-  localStorage.setItem("lang", lang);
-  const t = I18N[lang];
+function setLang(newlang) {
+  state.lang = newlang;
+  localStorage.setItem("lang", newlang);
+  const t = I18N[newlang];
 
   tag.textContent = t.tag;
   $$(".navlink").forEach(a => {
@@ -131,7 +131,7 @@ function setLang(lang) {
     a.textContent = t.nav[path] || t.nav["/"];
   });
 
-  lang.textContent = lang.toUpperCase();
+  lang.textContent = newlang.toUpperCase();
   render();
 }
 
