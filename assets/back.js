@@ -1,3 +1,5 @@
+const { startTransition } = require("react");
+
 const $ = (sel, p = document) => p.querySelector(sel);
 const $$ = (sel, p = document) => [...p.querySelectorAll(sel)];
 const el = (tag, props = {}) => Object.assign(document.createElement(tag), props);
@@ -53,7 +55,7 @@ const DATA = {
     { label: "LinkedIn", url: "https://www.linkedin.com/in/alvaroredomotta" },
     { label: "Email", url: "mailto:varo19704@gmail.com" },
     { label: "CV (PDF)",  url: "Docs/CV.pdf", download: "Alvaro-CV.pdf"  },
-    { label: "Instagram — Bako", url: "https://instagram.com/yourtattoo" }
+    { label: "Instagram", url: "https://www.instagram.com/_alvo1_" }
   ],
   now_en: [
     "Studying Backend fundamentals (C# / Python / Java)",
@@ -216,7 +218,7 @@ function viewHome() {
   ul.className = "list-now";
   const nowList = state.lang === "es" ? DATA.now_es : DATA.now_en;
   nowList.forEach(item => {
-    const li = el("li", { textContent: "• " + item });
+    const li = el("li", { textContent: item });
     ul.appendChild(li);
   });
   now.body.appendChild(ul);
@@ -402,7 +404,7 @@ function renderProjectLists(cur, arc) {
 function render() {
   outlet.innerHTML = "";
   let node;
-  if (state.route === "/") node = viewHome();
+  if (state.route === "/" || state.route === "/#") node = viewHome();
   else if (state.route === "/dev") node = viewDev();
   else if (state.route === "/lyra") node = viewLyra();
   else if (state.route === "/bako") node = viewBako();
