@@ -213,6 +213,10 @@ html[data-theme="light"] .chip {
   background: rgba(0,0,0,.04);
 }
 
+/* Make sure dynamic buttons/links follow theme colors */
+.btn, .btn span { color: var(--text); }
+.text-muted { color: var(--muted); }
+
 /* ---------- Animations ---------- */
 .fade-enter { opacity: 0; transform: translateY(6px); }
 .fade-in { animation: fade .35s ease forwards; }
