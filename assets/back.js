@@ -67,13 +67,17 @@ const DATA = {
   ],
   projects: {
     current: [
-      { name: "TaskTrackPro", desc_en: ".NET 8 tasks & alerts with tests", desc_es: "Tareas y alertas en .NET 8 con tests", stack: ["C#", ".NET", "xUnit"], url: "https://github.com/your-user/tasktrackpro" },
-      { name: "Lyra Core", desc_en: "Foundations for personal AI assistant", desc_es: "Fundaciones de mi asistente de IA personal", stack: ["Nothing at the moment"], url: "https://github.com/your-user/lyra-core" },
-      { name: "Own Web", desc_en: "This site for ovacode.dev", desc_es: "Este sitio para ovacode.dev", stack: ["HTML", "CSS", "JS"], url: "#" }
+      { name: "TaskTrackPro", desc_en: ".NET 8 tasks & alerts with tests", desc_es: "Tareas y alertas en .NET 8 con tests", stack: ["C#", ".NET", "xUnit"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/C%23/TaskTrack" },
+      { name: "Pocket Balance", desc_en: "Personal savings management site (work in progress)", desc_es: "Sitio para gestion de ahorro de dinero (todavia en produción)", stack: ["Nothing at the moment"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/C%23/PocketBalance" },
+      { name: "OBL Java", desc_en: "Academic Java project (developed for university)", desc_es: "Desarrollo hecho en JAVA (hecho para la facultad)", stack: ["Java"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Java/obl" },
+      { name: "OBL2 Java", desc_en: "Second Academic Java project (developed for university)", desc_es: "Segundo Desarrollo hecho en JAVA (hecho para la facultad)", stack: ["Java"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Java/Obligatorio2_P2" },
+      { name: "Lesson Manager", desc_en: "Public school lesson management system (developed for university)", desc_es: "Desarrollo para administración de lecciones para escuelas publicas (hecho para la facultad)", stack: ["JS", "CSS", "HTML", "Bootstrap"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Js%26Html/fis2-main" },
+      { name: "Lyra Core", desc_en: "Foundations for personal AI assistant", desc_es: "Fundaciones de mi asistente de IA personal", stack: ["Nothing at the moment"], url: "https://ovacode.dev/#/lyra" },
+      { name: "Task Manager", desc_en: "A primitive TaskManager + UI", desc_es: "Un gestor de Tareas primitivo + UI", stack: ["Python", "Py Library"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Python/Task%20manager" },
+      { name: "Task Manager Only Script", desc_en: "A primitive TaskManager + UI", desc_es: "Gestor de tareas primitivo", stack: ["Python"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Python/Task%20Manager%20Only%20script" },
+      { name: "Weather", desc_en: "App to check site weather (API integration and Library)", desc_es: "App para verificar clima de sitio (conexion con API y uso de libreria)", stack: ["Python", "API", "Py Library"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Python/Weather" },
+      { name: "Own Web", desc_en: "This site for ovacode.dev", desc_es: "Este sitio para ovacode.dev", stack: ["HTML", "CSS", "JS"], url: "ovacode.dev" }
     ],
-    archive: [
-      { name: "Uni Utilities", desc_en: "Helpers for coursework", desc_es: "Utilidades para la facultad", stack: ["Java", "C++"], url: "#" }
-    ]
   },
   lyra: {
     phase_en: "v0 – Planning",
