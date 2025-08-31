@@ -261,7 +261,7 @@ function viewHome() {
   hero.append(title, kicker);
 
   const featured = el("div", { className: "glass ring-soft block grid-cards" });
-  DATA.projects.current.slice(0, 2).forEach(p => featured.appendChild(cardProject(p)));
+  DATA.projects.current.forEach(p => featured.appendChild(cardProject(p)));
 
   right.append(hero, featured);
 
