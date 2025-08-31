@@ -213,9 +213,22 @@ html[data-theme="light"] .chip {
   background: rgba(0,0,0,.04);
 }
 
-/* Make sure dynamic buttons/links follow theme colors */
-.btn, .btn span { color: var(--text); }
-.text-muted { color: var(--muted); }
+/* --- Theme-aware colors (override UA defaults) --- */
+a, a:link, a:visited, a:hover, a:active { 
+  color: var(--text) !important;
+  text-decoration: none;
+}
+
+/* Botones/enlaces creados por JS */
+.btn, .btn * {
+  color: var(--text) !important;
+}
+
+/* Texto tenue (ej: flecha → que armás en el JS) */
+.text-muted {
+  color: var(--muted) !important;
+}
+
 
 /* ---------- Animations ---------- */
 .fade-enter { opacity: 0; transform: translateY(6px); }
