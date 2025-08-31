@@ -141,9 +141,6 @@ function setLang(newLang) {
   if (btnLang) {
     btnLang.textContent = newLang === "en" ? "ES" : "EN";
   }
-  if (typeof btnLang !== "undefined" && btnLang) {
-    btnLang.textContent = newLang.toUpperCase();
-  }
   render();
   highlightNav();
 }
