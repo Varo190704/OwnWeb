@@ -255,7 +255,7 @@ function viewHome() {
   const title = el("h2", { textContent: t.home.heroTitle });
   title.style.fontSize = "1.6rem";
   title.style.fontWeight = "600";
-  hero.append(kicker, title);
+  hero.append(title, kicker);
 
   const featured = el("div", { className: "glass ring-soft block grid-cards" });
   DATA.projects.current.slice(0, 2).forEach(p => featured.appendChild(cardProject(p)));
