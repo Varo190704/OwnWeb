@@ -118,18 +118,25 @@ function setTheme(next) {
 }
 
 /* ---------- Language ---------- */
-function setLang(newlang) {
-  state.lang = newlang;
-  localStorage.setItem("lang", newlang);
-  const t = I18N[newlang];
+function setLang(newLang) {
+  state.lang = newLang;
+  localStorage.setItem("lang", newLang);
+  document.documentElement.setAttribute("lang", newLang === "es" ? "es" : "en");
+  const t = I18N[newLang];
+  if (typeof TAGLINE !== "undefined" && TAGLINE) {
+    TAGLINE.textContent = t.tagline;
+  }
 
-  tagline.textContent = t.tag;
   $$(".navlink").forEach(a => {
     const path = a.dataset.route || "/";
     a.textContent = t.nav[path] || t.nav["/"];
   });
-  if (BTN_LANG) BTN_LANG.textContent = newLang.toUpperCase();
+
+  if (typeof BTN_LANG !== "undefined" && BTN_LANG) {
+    BTN_LANG.textContent = newLang.toUpperCase();
+  }
   render();
+  highlightNav();
 }
 
 /* ---------- Router ---------- */
