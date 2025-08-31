@@ -131,16 +131,18 @@ function setLang(newLang) {
   document.documentElement.setAttribute("lang", newLang === "es" ? "es" : "en");
   const t = I18N[newLang];
   if (typeof TAGLINE !== "undefined" && TAGLINE) {
-    TAGLINE.textContent = t.tagline;
+    TAGLINE.textContent = t.tag;
   }
 
   $$(".navlink").forEach(a => {
     const path = a.dataset.route || "/";
     a.textContent = t.nav[path] || t.nav["/"];
   });
-
-  if (typeof BTN_LANG !== "undefined" && BTN_LANG) {
-    BTN_LANG.textContent = newLang.toUpperCase();
+  if (btnLang) {
+    btnLang.textContent = newLang === "en" ? "ES" : "EN";
+  }
+  if (typeof btnLang !== "undefined" && btnLang) {
+    btnLang.textContent = newLang.toUpperCase();
   }
   render();
   highlightNav();
