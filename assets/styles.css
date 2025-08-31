@@ -229,6 +229,33 @@ a, a:link, a:visited, a:hover, a:active {
   color: var(--muted) !important;
 }
 
+/* Refactor */
+.row { 
+  display: flex; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+.gap { gap: .5rem; }
+
+/* El contenedor de filtros en /dev */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+/* Los botones/enlaces no deben forzar bloque */
+.btn { 
+  display: inline-flex;            /* <— antes tenías flex (bloque) */
+  align-items: center;
+  gap: .6rem;
+}
+
+/* Chips (por si algún navegador los muestra block) */
+.chip { 
+  display: inline-flex;
+  align-items: center;
+}
 
 /* ---------- Animations ---------- */
 .fade-enter { opacity: 0; transform: translateY(6px); }
