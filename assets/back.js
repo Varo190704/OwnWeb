@@ -14,6 +14,7 @@ const I18N = {
     tag: "Backend-in-progress · Tattoo artist (Bako) · Building Lyra",
     nav: { "/": "Home", "/dev": "Dev", "/lyra": "Lyra", "/bako": "Bako", "/ova": "Ova", "/blog": "Blog" },
     home: {
+      featured: "Featured Projects",
       heroTitle: "Creator & Developer",
       heroKicker: "I build software, art and a personal AI called Lyra.",
       quick: "Quick Links",
@@ -31,6 +32,7 @@ const I18N = {
     tag: "Backend en progreso · Tatuador (Bako) · Construyendo Lyra",
     nav: { "/": "Inicio", "/dev": "Dev", "/lyra": "Lyra", "/bako": "Bako", "/ova": "Ova", "/blog": "Blog" },
     home: {
+      featured: "Proyectos destacados",
       heroTitle: "Creador & Desarrollador",
       heroKicker: "Hago software, arte y una IA personal llamada Lyra.",
       quick: "Enlaces rápidos",
@@ -78,6 +80,7 @@ const DATA = {
       { name: "Weather", desc_en: "App to check site weather (API integration and Library)", desc_es: "App para verificar clima de sitio (conexion con API y uso de libreria)", stack: ["Python", "API", "Py Library"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Python/Weather" },
       { name: "Own Web", desc_en: "This site for ovacode.dev", desc_es: "Este sitio para ovacode.dev", stack: ["HTML", "CSS", "JS"], url: "ovacode.dev" }
     ],
+    archive: []
   },
   lyra: {
     phase_en: "v0 – Planning",
@@ -205,6 +208,7 @@ function cardProject(p) {
 
 /* ---------- Views ---------- */
 function viewHome() {
+  state.stackFilter = null; 
   const t = I18N[state.lang];
 
   const grid = el("div");
@@ -259,8 +263,8 @@ function viewHome() {
   title.style.fontSize = "1.6rem";
   title.style.fontWeight = "600";
   hero.append(title, kicker);
-
   const featured = el("div", { className: "glass ring-soft block grid-cards" });
+  featured.appendChild(el("h3", { className: "title", textContent: t.home.featured }));
   DATA.projects.current.forEach(p => featured.appendChild(cardProject(p)));
 
   right.append(hero, featured);
