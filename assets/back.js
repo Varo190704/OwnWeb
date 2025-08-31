@@ -126,21 +126,17 @@ function setTheme(next) {
 
 /* ---------- Language ---------- */
 function setLang(newLang) {
+
   state.lang = newLang;
   localStorage.setItem("lang", newLang);
   document.documentElement.setAttribute("lang", newLang === "es" ? "es" : "en");
   const t = I18N[newLang];
-  if (typeof TAGLINE !== "undefined" && TAGLINE) {
-    TAGLINE.textContent = t.tag;
-  }
-
+  if (tagline) tagline.textContent = t.tag;
   $$(".navlink").forEach(a => {
     const path = a.dataset.route || "/";
     a.textContent = t.nav[path] || t.nav["/"];
   });
-  if (btnLang) {
-    btnLang.textContent = newLang === "en" ? "ES" : "EN";
-  }
+  if (btnLang) btnLang.textContent = (newLang === "en" ? "ES" : "EN");
   render();
   highlightNav();
 }
