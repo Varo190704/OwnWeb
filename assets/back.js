@@ -408,15 +408,18 @@ function renderProjectLists(cur, arc) {
 
 /* ---------- Render entry ---------- */
 function render() {
+  render.last = state.route;
   outlet.innerHTML = "";
   let node;
-  if (state.route === "/") node = viewHome();
-  else if (state.route === "/dev") node = viewDev();
-  else if (state.route === "/lyra") node = viewLyra();
-  else if (state.route === "/bako") node = viewBako();
-  else if (state.route === "/ova") node = viewOva();
-  else if (state.route === "/blog") node = viewBlog();
-  else node = viewHome();
+   switch (state.route) {
+    case "/":     node = viewHome(); break;
+    case "/dev":  node = viewDev(); break;
+    case "/lyra": node = viewLyra(); break;
+    case "/bako": node = viewBako(); break;
+    case "/ova":  node = viewOva(); break;
+    case "/blog": node = viewBlog(); break;
+    default:      node = viewHome(); break;
+  }
 
   outlet.appendChild(node);
 }
