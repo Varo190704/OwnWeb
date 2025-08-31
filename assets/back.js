@@ -154,7 +154,9 @@ window.addEventListener("hashchange", () => {
 /* ---------- Builders ---------- */
 function chip(text, onClick, active = false) {
   const b = el("button", { className: "chip card-hover btn text-muted", textContent: text });
+  b.classList.add("chip", "chip-hover", "btn", "text-muted");
   if (active) b.classList.add("chip--active");
+  b.style.color = "var(--text-muted)";
   b.addEventListener("click", onClick);
   return b;
 }
