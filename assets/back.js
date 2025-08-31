@@ -251,7 +251,6 @@ function viewHome() {
 
   const hero = el("div", { className: "glass ring-soft block hero" });
   const kicker = el("div", { className: "mono text-muted", textContent: t.home.heroKicker });
-  kicker.style.marginBottom = ".4rem";
   const title = el("h2", { textContent: t.home.heroTitle });
   title.style.fontSize = "1.6rem";
   title.style.fontWeight = "600";
