@@ -42,7 +42,7 @@ const I18N = {
     dev: { title: "Proyectos", filter: "Filtrar", current: "Actuales", archive: "Archivo" },
     lyra: { title: "Lyra — hoja de ruta y estado", phase: "Fase", compute: "Cómputo", storage: "Almacenamiento", milestones: "Hitos" },
     bako: { title: "Bako — portfolio de tatuajes", empty: "Galería pronto." },
-    ova: { title: "Ova — arte y textiles", empty: "Lookbook pronto." },
+    ova: { title: "About Ovalo", empty: "Cooming soon" },
     blog: { title: "Notas & Artículos", empty: "Pronto: mini posts de tech, surf y vida." },
     chipsAll: "Todos"
   }
@@ -103,7 +103,8 @@ const DATA = {
       "Prototipo de router de prompts + logging",
       "Plan de integración con NAS (media + datasets)"
     ]
-  }
+  },
+  
 };
 
 /* ---------- State ---------- */
