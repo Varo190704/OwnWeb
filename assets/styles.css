@@ -70,10 +70,10 @@ html[data-theme="light"] body.site-body {
   gap: 1rem;
 }
 
-.brand__logo {
+.brand__logo, .resize {
   height: 4rem;
   width: 4rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background: rgba(255,255,255,0.03);
   backdrop-filter: blur(10px);
   display: grid;
@@ -246,7 +246,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 /* Los botones/enlaces no deben forzar bloque */
 .btn { 
-  display: inline-flex;            /* <— antes tenías flex (bloque) */
+  display: inline-flex;          
   align-items: center;
   gap: .6rem;
 }

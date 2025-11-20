@@ -11,38 +11,90 @@ const tagline = $("#tagline");
 /* ---------- i18n ---------- */
 const I18N = {
   en: {
-    tag: "Backend-in-progress · Tattoo artist (Bako) · Building Lyra",
-    nav: { "/": "Home", "/dev": "Dev", "/lyra": "Lyra", "/bako": "Bako", "/ova": "Ova", "/blog": "Blog" },
+    tag: "Backend-in-progress · Building Aionis",
+    nav: { "/": "Home", "/dev": "Dev", "/aionis": "Aionis", "/ova": "Ova", "/blog": "Blog" },
     home: {
       featured: "Featured Projects",
       heroTitle: "Creator & Developer",
-      heroKicker: "I build software, art and a personal AI called Lyra.",
+      heroKicker: "I build software, art and a personal AI called Aionis.",
       quick: "Quick Links",
       now: "Now",
-      lyra: "Lyra Status",
+      aionis: "Aionis Status",
     },
     dev: { title: "Projects", filter: "Filter", current: "Current", archive: "Archive" },
-    lyra: { title: "Lyra — roadmap & status", phase: "Phase", compute: "Compute", storage: "Storage", milestones: "Milestones" },
-    bako: { title: "Bako — tattoo portfolio", empty: "Gallery coming soon." },
-    ova: { title: "Ova — art & textiles", empty: "Lookbook coming soon." },
+    aionis: { title: "Aionis — roadmap & status", phase: "Phase", compute: "Compute", storage: "Storage", milestones: "Milestones" },
+   ova: {
+      title: "About Ovalo",
+     long: {
+        hero1: "I’m Álvaro (Ovalo). I create software, art, and I surf.",
+        hero2: "My work blends engineering, design, and a productive obsession with building useful tools.",
+
+        profileTitle: "General Profile",
+        profile: "I study Computer Engineering and spend much of my time designing architectures, training models, and improving my own systems. I’m interested in technologies that scale: AI, personal infrastructure, computer vision, and tools that solve real problems.",
+
+        buildTitle: "What I Build",
+        build1: "Aionis, my personal AI designed as a modular system with vision, language, reasoning, and memory (not yet).",
+        build2: "TaskTrackPro, a management platform built from scratch with TDD.",
+        build3: "A homelab powered by Proxmox, NAS, GPU passthrough, and local models.",
+
+        phTitle: "Philosophy & Vision",
+        ph1: "I believe in continuous learning, iteration, and robust systems. My vision is to turn my projects into real, scalable products.",
+        ph2: "Long-term, I want to scale my tools and turn Aionis into a complete personal support system.",
+
+        ecoTitle: "My Ecosystem",
+        eco1: "Code — my projects and technical background.",
+        eco2: "Art — my visual work in Ova.",
+        eco3: "AI — the development of Aionis.",
+        eco4: "Hardware — homelab, storage, and local experimentation.",
+
+        nowTitle: "Now",
+        now: "I'm currently developing new phases of Aionis, training visual models, improving my infrastructure, and studying Engineering.",
+
+        endTitle: "Closing",
+        end: "I don’t seek perfection, I seek progress. This website documents my process: my projects, my experiments, and what I’m building long-term."
+      }
+    },
     blog: { title: "Notes & Articles", empty: "Soon: short posts on tech, surf and life." },
     chipsAll: "All"
   },
   es: {
-    tag: "Backend en progreso · Tatuador (Bako) · Construyendo Lyra",
-    nav: { "/": "Inicio", "/dev": "Dev", "/lyra": "Lyra", "/bako": "Bako", "/ova": "Ova", "/blog": "Blog" },
+    tag: "Backend en progreso· Construyendo Aionis",
+    nav: { "/": "Inicio", "/dev": "Dev", "/aionis": "Aionis", "/ova": "Ova", "/blog": "Blog" },
     home: {
       featured: "Proyectos destacados",
       heroTitle: "Creador & Desarrollador",
-      heroKicker: "Hago software, arte y una IA personal llamada Lyra.",
+      heroKicker: "Hago software, arte y una IA personal llamada Aionis.",
       quick: "Enlaces rápidos",
       now: "Ahora",
-      lyra: "Estado de Lyra",
+      aionis: "Estado de Aionis",
     },
     dev: { title: "Proyectos", filter: "Filtrar", current: "Actuales", archive: "Archivo" },
-    lyra: { title: "Lyra — hoja de ruta y estado", phase: "Fase", compute: "Cómputo", storage: "Almacenamiento", milestones: "Hitos" },
-    bako: { title: "Bako — portfolio de tatuajes", empty: "Galería pronto." },
-    ova: { title: "About Ovalo", empty: "Cooming soon" },
+    aionis: { title: "Aionis — hoja de ruta y estado", phase: "Fase", compute: "Cómputo", storage: "Almacenamiento", milestones: "Hitos" },
+    ova: {
+      title: "Sobre Óvalo",
+      long: {
+        hero1: "Soy Álvaro (Ovalo). Me dedico a crear: software, arte y a surfear.",
+        hero2: "Mi trabajo combina ingeniería, diseño y una obsesión productiva por construir herramientas útiles.",
+        profileTitle: "Perfil general",
+        profile: "Estudio Ingeniería en Computación y paso gran parte del tiempo diseñando arquitecturas, entrenando modelos y mejorando mis propios sistemas. Me interesan las tecnologías que escalan: IA, infraestructura personal, visión computacional y herramientas que resuelven problemas reales.",
+        buildTitle: "Lo que construyo",
+        build1: "Aionis, mi IA personal diseñada como un sistema modular con visión, lenguaje, razonamiento y memoria (por ahora no).",
+        build2: "TaskTrackPro, una plataforma de gestión construida desde cero con TDD.",
+        build3: "Un homelab con Proxmox, NAS, GPU passthrough y modelos locales.",
+        phTitle: "Filosofía y visión",
+        ph1: "Creo en el aprendizaje continuo, la iteración y los sistemas robustos. Mi visión es llevar mis proyectos a productos reales y escalables.",
+        ph2: "A largo plazo quiero escalar mis herramientas y convertir Aionis en un sistema completo de soporte personal.",
+        ecoTitle: "Mi ecosistema",
+        eco1: "Código — mis proyectos y mi formación técnica.",
+        eco2: "Arte — mi trabajo en Ova.",
+        eco3: "IA — el desarrollo de Aionis.",
+        eco4: "Hardware — homelab, almacenamiento y experimentación local.",
+        nowTitle: "Ahora",
+        now: "Actualmente estoy desarrollando nuevas fases de Aionis, entrenando modelos visuales, mejorando mi infraestructura, estudiando Ingeniería.",
+        endTitle: "Cierre",
+        end: "No busco perfección, busco progreso. Esta web documenta mi proceso: mis proyectos, mis experimentos y lo que estoy construyendo a largo plazo."
+      }
+    },
     blog: { title: "Notas & Artículos", empty: "Pronto: mini posts de tech, surf y vida." },
     chipsAll: "Todos"
   }
@@ -59,12 +111,12 @@ const DATA = {
   ],
   now_en: [
     "Studying Backend fundamentals (C# / Python / Java)",
-    "Building Lyra v0 roadmap",
+    "Building Aionis v2",
     "Designing ovacode.dev"
   ],
   now_es: [
     "Estudiando fundamentos de Backend (C# / Python / Java)",
-    "Armando la hoja de ruta de Lyra v0",
+    "Armando Aionis v2",
     "Diseñando ovacode.dev"
   ],
   projects: {
@@ -74,7 +126,7 @@ const DATA = {
       { name: "OBL Java", desc_en: "Academic Java project (developed for university)", desc_es: "Desarrollo hecho en JAVA (hecho para la facultad)", stack: ["Java"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Java/obl" },
       { name: "OBL2 Java", desc_en: "Second Academic Java project (developed for university)", desc_es: "Segundo Desarrollo hecho en JAVA (hecho para la facultad)", stack: ["Java"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Java/Obligatorio2_P2" },
       { name: "Lesson Manager", desc_en: "Public school lesson management system (developed for university)", desc_es: "Desarrollo para administración de lecciones para escuelas publicas (hecho para la facultad)", stack: ["JS", "CSS", "HTML", "Bootstrap"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Js%26Html/fis2-main" },
-      { name: "Lyra Core", desc_en: "Foundations for personal AI assistant", desc_es: "Fundaciones de mi asistente de IA personal", stack: ["LLMs", "Proxmox", "Linux"], url: "https://ovacode.dev/#/lyra" },
+      { name: "Aionis Core", desc_en: "Foundations for personal AI assistant", desc_es: "Fundaciones de mi asistente de IA personal", stack: ["LLMs", "Proxmox", "Linux"], url: "https://ovacode.dev/#/aionis" },
       { name: "NAS", desc_en: "My own NAS server", desc_es: "Servidor NAS propio", stack: ["Proxmox", "NAS"], url: "" },
       { name: "Task Manager", desc_en: "A primitive TaskManager + UI", desc_es: "Un gestor de Tareas primitivo + UI", stack: ["Python", "Py Library"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Python/Task%20manager" },
       { name: "Task Manager Only Script", desc_en: "A primitive TaskManager + UI", desc_es: "Gestor de tareas primitivo", stack: ["Python"], url: "https://github.com/Varo190704/Portfolio/tree/main/Portfolio/Python/Task%20Manager%20Only%20script" },
@@ -83,25 +135,26 @@ const DATA = {
     ],
     archive: []
   },
-  lyra: {
-    phase_en: "v0 – Planning",
-    phase_es: "v0 – Planificación",
-    compute_en: "i9 14900k / 6900tx / 128gb Ram DDR5",
-    compute_es: "i9 14900k / 6900tx / 128gb Ram DDR5",
-    storage_en: "6 TB → target 100 TB (NAS)",
-    storage_es: "6 TB → objetivo 100 TB (NAS)",
+  aionis: {
+    phase_en: "v1 – Integration beetween some LLMs",
+    phase_es: "v1 – Integración entre LLMs",
+    compute_en: "i9 14900k / 6900tx / 128gb Ram DDR5 / Zero Project",
+    compute_es: "i9 14900k / 6900tx / 128gb Ram DDR5 / Zero Project",
+    software_en: "Proxmox / Docker / Python / Ollama / Ubuntu",
+    storage_en: "5 TB → target 30 TB (NAS)",
+    storage_es: "5 TB → objetivo 30 TB (NAS)",
     badges: ["Local-first", "Privacy", "Homelab"],
     milestones_en: [
-      "Define v0 goals and constraints",
-      "Set up mini PC host & backups",
-      "Prototype prompt router + logging",
-      "Plan NAS integration (media + datasets)"
+      "Intregation between some LLMs",
+      "Integration between my own CNN and decoder models",
+      "Host PC setup and backups",
+      "Using Tailscale for remote access",
     ],
     milestones_es: [
-      "Definir objetivos y límites de v0",
-      "Configurar PC host y backups",
-      "Prototipo de router de prompts + logging",
-      "Plan de integración con NAS (media + datasets)"
+      "Integración entre algunos LLMs",
+      "Integración entre mis propios modelos CNN y decodificadores",
+      "Configuración de PC host y backups",
+      "Uso de Tailscale para acceso remoto",
     ]
   },
   
@@ -234,21 +287,21 @@ function viewHome() {
   });
   now.body.appendChild(ul);
 
-  // Lyra mini (for the future)
-  const lyraMini = panel(t.home.lyra);
+  // Aionis mini (for the future)
+  const aionisMini = panel(t.home.aionis);
   const badgeRow = el("div");
   badgeRow.className = "row-badges";
-  DATA.lyra.badges.forEach(b => badgeRow.appendChild(chip(b, () => {}, true)));
+  DATA.aionis.badges.forEach(b => badgeRow.appendChild(chip(b, () => {}, true)));
   const stats = el("div");
   stats.className = "grid-stats";
   stats.append(
-    pillStat(I18N[state.lang].lyra.phase, state.lang === "es" ? DATA.lyra.phase_es : DATA.lyra.phase_en),
-    pillStat(I18N[state.lang].lyra.compute, state.lang === "es" ? DATA.lyra.compute_es : DATA.lyra.compute_en, true),
-    pillStat(I18N[state.lang].lyra.storage, state.lang === "es" ? DATA.lyra.storage_es : DATA.lyra.storage_en, true)
+    pillStat(I18N[state.lang].aionis.phase, state.lang === "es" ? DATA.aionis.phase_es : DATA.aionis.phase_en),
+    pillStat(I18N[state.lang].aionis.compute, state.lang === "es" ? DATA.aionis.compute_es : DATA.aionis.compute_en, true),
+    pillStat(I18N[state.lang].aionis.storage, state.lang === "es" ? DATA.aionis.storage_es : DATA.aionis.storage_en, true)
   );
-  lyraMini.body.append(badgeRow, stats);
+  aionisMini.body.append(badgeRow, stats);
 
-  left.append(quick.wrap, now.wrap, lyraMini.wrap);
+  left.append(quick.wrap, now.wrap, aionisMini.wrap);
 
   // Right column
   const right = el("section");
@@ -274,7 +327,6 @@ function viewDev() {
   const t = I18N[state.lang];
   const wrap = el("div", { className: "space-vertical fade-enter fade-in" });
 
-  // Header
   const head = el("div", { className: "glass ring-soft block row-between" });
   const title = el("div", { className: "title", textContent: t.dev.title });
   const filterWrap = el("div", { className: "row gap" });
@@ -294,55 +346,70 @@ function viewDev() {
   return wrap;
 }
 
-function viewLyra() {
+function viewaionis() {
   const t = I18N[state.lang];
   const wrap = el("div", { className: "space-vertical fade-enter fade-in" });
 
   const panel = el("div", { className: "glass ring-soft block space-vertical" });
-  const h2 = el("h2", { textContent: t.lyra.title });
+  const h2 = el("h2", { textContent: t.aionis.title });
   h2.style.fontWeight = "600";
   panel.appendChild(h2);
 
   const stats = el("div", { className: "grid-stats" });
   stats.append(
-    pillStat(t.lyra.phase, state.lang === "es" ? DATA.lyra.phase_es : DATA.lyra.phase_en),
-    pillStat(t.lyra.compute, state.lang === "es" ? DATA.lyra.compute_es : DATA.lyra.compute_en, true),
-    pillStat(t.lyra.storage, state.lang === "es" ? DATA.lyra.storage_es : DATA.lyra.storage_en, true)
+    pillStat(t.aionis.phase, state.lang === "es" ? DATA.aionis.phase_es : DATA.aionis.phase_en),
+    pillStat(t.aionis.compute, state.lang === "es" ? DATA.aionis.compute_es : DATA.aionis.compute_en, true),
+    pillStat(t.aionis.storage, state.lang === "es" ? DATA.aionis.storage_es : DATA.aionis.storage_en, true)
   );
 
-  const mTitle = el("h3", { textContent: t.lyra.milestones });
+  const mTitle = el("h3", { textContent: t.aionis.milestones });
   mTitle.style.fontWeight = "600";
   const ol = el("ol");
   ol.className = "list-ordered";
-  (state.lang === "es" ? DATA.lyra.milestones_es : DATA.lyra.milestones_en)
+  (state.lang === "es" ? DATA.aionis.milestones_es : DATA.aionis.milestones_en)
     .forEach(m => ol.appendChild(el("li", { textContent: m })));
 
   const badges = el("div", { className: "row-badges" });
-  DATA.lyra.badges.forEach(b => badges.appendChild(chip(b, () => {}, true)));
+  DATA.aionis.badges.forEach(b => badges.appendChild(chip(b, () => {}, true)));
 
   panel.append(stats, mTitle, ol, badges);
   wrap.appendChild(panel);
   return wrap;
 }
 
-function viewBako() {
-  const t = I18N[state.lang];
-  const wrap = el("div", { className: "space-vertical fade-enter fade-in" });
-  const card = el("div", { className: "glass ring-soft block" });
-  const h2 = el("h2", { textContent: t.bako.title }); h2.style.fontWeight = "600";
-  const p = el("p", { className: "text-muted", textContent: t.bako.empty });
-  card.append(h2, p);
-  wrap.appendChild(card);
-  return wrap;
-}
-
 function viewOva() {
   const t = I18N[state.lang];
+  const L = t.ova.long;
   const wrap = el("div", { className: "space-vertical fade-enter fade-in" });
   const card = el("div", { className: "glass ring-soft block" });
   const h2 = el("h2", { textContent: t.ova.title }); h2.style.fontWeight = "600";
-  const p = el("p", { className: "text-muted", textContent: t.ova.empty });
-  card.append(h2, p);
+  const sectionTitle = (txt) =>
+    el("h3", { textContent: txt, className: "mt-4", style: "font-weight:600;" });
+  const sectionText = (txt) =>
+    el("p", { textContent: txt, className: "text-muted" });
+  card.append(
+    h2,
+    sectionText(L.hero1),
+    sectionText(L.hero2),
+    sectionTitle(L.profileTitle),
+    sectionText(L.profile),
+    sectionTitle(L.buildTitle),
+    sectionText(L.build1),
+    sectionText(L.build2),
+    sectionText(L.build3),
+    sectionTitle(L.phTitle),
+    sectionText(L.ph1),
+    sectionText(L.ph2),
+    sectionTitle(L.ecoTitle),
+    sectionText(L.eco1),
+    sectionText(L.eco2),
+    sectionText(L.eco3),
+    sectionText(L.eco4),
+    sectionTitle(L.nowTitle),
+    sectionText(L.now),
+    sectionTitle(L.endTitle),
+    sectionText(L.end),
+  );
   wrap.appendChild(card);
   return wrap;
 }
@@ -418,8 +485,7 @@ function render() {
    switch (state.route) {
     case "/":     node = viewHome(); break;
     case "/dev":  node = viewDev(); break;
-    case "/lyra": node = viewLyra(); break;
-    case "/bako": node = viewBako(); break;
+    case "/aionis": node = viewaionis(); break;
     case "/ova":  node = viewOva(); break;
     case "/blog": node = viewBlog(); break;
     default:      node = viewHome(); break;
@@ -444,7 +510,7 @@ document.addEventListener("keydown", (e) => {
   if (k === "t") setTheme(state.theme === "dark" ? "light" : "dark");
   if (k === "l") setLang(state.lang === "en" ? "es" : "en");
   if (["1", "2", "3", "4", "5", "6"].includes(e.key)) {
-    const routes = ["/", "/dev", "/lyra", "/bako", "/ova", "/blog"];
+    const routes = ["/", "/dev", "/aionis", "/ova", "/blog"];
     navigate(routes[Number(e.key) - 1] || "/");
   }
 });
