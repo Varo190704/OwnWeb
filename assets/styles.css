@@ -83,6 +83,13 @@ html[data-theme="light"] body.site-body {
   box-shadow: 0 0 0 1px rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.5);
 }
 
+.resize {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem; /* para mantener la forma redonda */
+}
+
 .brand__title {
   font-size: 1.6rem;
   font-weight: 600;
