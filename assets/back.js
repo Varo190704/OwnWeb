@@ -137,8 +137,8 @@ const DATA = {
     archive: []
   },
   aionis: {
-    phase_en: "v1 – Integration beetween some LLMs",
-    phase_es: "v1 – Integración entre LLMs",
+    phase_en: "v2 – Integration beetween some LLMs, LoRA training, vision models, and AI photoGen",
+    phase_es: "v2 – Integración entre LLMs, entrenamiento LoRA, modelos de visión y AI photoGen",
     compute_en: "i9 14900k / 6900tx / 128gb Ram DDR5 / Zero Project",
     compute_es: "i9 14900k / 6900tx / 128gb Ram DDR5 / Zero Project",
     software_en: "Proxmox / Docker / Python / Ollama / Ubuntu",
@@ -150,12 +150,18 @@ const DATA = {
       "Integration between my own CNN and decoder models",
       "Host PC setup and backups",
       "Using Tailscale for remote access",
+      "Training vision models",
+      "LoRA training pipelines",
+      "AI photoGen integration",
     ],
     milestones_es: [
       "Integración entre algunos LLMs",
       "Integración entre mis propios modelos CNN y decodificadores",
       "Configuración de PC host y backups",
       "Uso de Tailscale para acceso remoto",
+      "Entrenamiento de modelos de visión",
+      "Pipelines de entrenamiento LoRA",
+      "Integración de AI photoGen",
     ]
   },
   
