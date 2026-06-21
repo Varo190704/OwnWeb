@@ -46,4 +46,4 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 ## Available in other languages:  
-- [Español](/Docs/README.es.md)
+- [Español](/Docs/README.es.md).
